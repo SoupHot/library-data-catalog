@@ -206,7 +206,7 @@ function render(rows) {
     if (r.description) {
       sourceCell = `<details><summary>${escapeHtml(r.source || "설명 보기")}</summary><pre>${escapeHtml(r.description)}</pre></details>`;
     } else if (r.preview) {
-      sourceCell = `<details><summary>🖼️ 미리보기 이미지</summary><img src="${r.preview}" style="max-width:100%;border-radius:.4rem"></details>`;
+      sourceCell = `<a href="${r.preview}" target="_blank">🖼️ 미리보기 이미지 (새 탭)</a>`;
     }
     return `<tr>
     <td><span class="badge" style="background:${c}1a;color:${c}">${r.category}</span></td>
