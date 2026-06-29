@@ -33,11 +33,15 @@ def csv_schema(path):
     return header, max(len(rows) - 1, 0)
 
 
-def kosis_source(txt_path):
+def kosis_source(text):
     """Pull the '출처' line out of a KOSIS metadata .txt sidecar, if present."""
-    text = read_text_any(txt_path)
     m = re.search(r"출처\s*:\s*(.+)", text)
     return m.group(1).strip() if m else None
+
+
+def is_csv_sidecar(path):
+    """.txt/.png files that just describe or preview a same-named .csv aren't data themselves."""
+    return path.suffix.lower() in (".txt", ".png") and path.with_suffix(".csv").exists()
 
 
 def xlsx_schema(path):
@@ -59,6 +63,8 @@ def describe(path):
         "rows": None,
         "schema": None,
         "source": None,
+        "description": None,
+        "has_preview": path.with_suffix(".png").exists(),
     }
     try:
         if entry["ext"] == ".csv":
@@ -67,7 +73,8 @@ def describe(path):
             entry["rows"] = rows
             sidecar = path.with_suffix(".txt")
             if sidecar.exists():
-                entry["source"] = kosis_source(sidecar)
+                entry["description"] = read_text_any(sidecar)
+                entry["source"] = kosis_source(entry["description"])
         elif entry["ext"] == ".xlsx":
             sheets, _ = xlsx_schema(path)
             entry["schema"] = sheets
@@ -109,6 +116,10 @@ tbody tr:last-child td{border-bottom:none}
 .bar-row{display:grid;grid-template-columns:7rem 1fr 3rem;align-items:center;gap:.6rem;margin-bottom:.45rem;font-size:.78rem}
 .bar-track{background:var(--bg);border-radius:.3rem;height:.6rem;overflow:hidden}
 .bar-fill{height:100%;border-radius:.3rem}
+details>summary{cursor:pointer;color:var(--accent)}
+details[open]>summary{margin-bottom:.4rem}
+details pre{white-space:pre-wrap;font-family:ui-monospace,monospace;font-size:.72rem;color:var(--ink);background:var(--bg);border-radius:.5rem;padding:.6rem .8rem;margin:0;max-width:32rem}
+.preview-flag{margin-left:.35rem;font-size:.8rem}
 </style>
 <div class="wrap">
 <header>
@@ -126,7 +137,7 @@ tbody tr:last-child td{border-bottom:none}
 <table id="t">
 <thead><tr>
 <th data-k="category">카테고리</th><th data-k="path">파일</th><th data-k="rows">행수</th>
-<th data-k="size_kb">크기(KB)</th><th data-k="modified">수정일</th><th data-k="source">출처/일자</th><th>스키마</th>
+<th data-k="size_kb">크기(KB)</th><th data-k="modified">수정일</th><th data-k="source">출처 / 설명</th><th>스키마</th>
 </tr></thead>
 <tbody></tbody>
 </table>
@@ -175,16 +186,23 @@ barChart(document.querySelector("#chart-count"), countByCat, colorOf);
 barChart(document.querySelector("#chart-rows"), rowsByCat.filter(([, v]) => v > 0), colorOf);
 barChart(document.querySelector("#chart-ext"), extPairs, () => "var(--accent)");
 
+function escapeHtml(s) {
+  return s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+}
+
 function render(rows) {
   tbody.innerHTML = rows.map(r => {
     const c = colorOf(r.category);
+    const sourceCell = r.description
+      ? `<details><summary>${escapeHtml(r.source || "설명 보기")}</summary><pre>${escapeHtml(r.description)}</pre></details>`
+      : (r.source ?? "");
     return `<tr>
     <td><span class="badge" style="background:${c}1a;color:${c}">${r.category}</span></td>
-    <td class="path">${r.path}</td>
+    <td class="path">${r.path}${r.has_preview ? '<span class="preview-flag" title="원본 위치에 미리보기 이미지(.png) 있음">🖼️</span>' : ""}</td>
     <td class="num">${r.rows ?? ""}</td>
     <td class="num">${r.size_kb}</td>
     <td class="num">${r.modified}</td>
-    <td>${r.source ?? ""}</td>
+    <td>${sourceCell}</td>
     <td class="schema">${r.schema ? (Array.isArray(r.schema) ? r.schema.join(", ") : r.schema) : ""}</td>
   </tr>`;
   }).join("");
@@ -208,7 +226,7 @@ document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click
 
 
 def build():
-    files = [p for p in SOURCE.rglob("*") if p.is_file()]
+    files = [p for p in SOURCE.rglob("*") if p.is_file() and not is_csv_sidecar(p)]
     catalog = sorted((describe(p) for p in files), key=lambda e: (e["category"], e["path"]))
     (OUT / "catalog.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2))
     html = HTML_TEMPLATE.replace("__DATA__", json.dumps(catalog, ensure_ascii=False))
