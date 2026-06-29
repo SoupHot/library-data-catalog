@@ -6,6 +6,7 @@ Run after adding/changing source files: python3 build_catalog.py
 import csv
 import json
 import re
+import shutil
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -64,7 +65,7 @@ def describe(path):
         "schema": None,
         "source": None,
         "description": None,
-        "has_preview": path.with_suffix(".png").exists(),
+        "preview": f"previews/{path.with_suffix('.png').name}" if path.with_suffix(".png").exists() else None,
     }
     try:
         if entry["ext"] == ".csv":
@@ -118,7 +119,7 @@ tbody tr:last-child td{border-bottom:none}
 .bar-fill{height:100%;border-radius:.3rem}
 details>summary{cursor:pointer;color:var(--accent)}
 details[open]>summary{margin-bottom:.4rem}
-details pre{white-space:pre-wrap;font-family:ui-monospace,monospace;font-size:.72rem;color:var(--ink);background:var(--bg);border-radius:.5rem;padding:.6rem .8rem;margin:0;max-width:32rem}
+details pre{white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,monospace;font-size:.72rem;color:var(--ink);background:var(--bg);border-radius:.5rem;padding:.6rem .8rem;margin:0;max-width:100%}
 .preview-flag{margin-left:.35rem;font-size:.8rem}
 </style>
 <div class="wrap">
@@ -128,15 +129,15 @@ details pre{white-space:pre-wrap;font-family:ui-monospace,monospace;font-size:.7
 </header>
 <div class="stats" id="stats"></div>
 <div class="charts">
-  <div class="chart"><h3>카테고리별 파일 수</h3><div id="chart-count"></div></div>
-  <div class="chart"><h3>카테고리별 데이터 행수</h3><div id="chart-rows"></div></div>
+  <div class="chart"><h3>플랫폼별 파일 수</h3><div id="chart-count"></div></div>
+  <div class="chart"><h3>플랫폼별 데이터 행수</h3><div id="chart-rows"></div></div>
   <div class="chart"><h3>파일 형식 분포</h3><div id="chart-ext"></div></div>
 </div>
-<input id="q" placeholder="필터 (카테고리 / 파일명 / 스키마 검색)">
+<input id="q" placeholder="필터 (플랫폼 / 파일명 / 스키마 검색)">
 <div class="card">
 <table id="t">
 <thead><tr>
-<th data-k="category">카테고리</th><th data-k="path">파일</th><th data-k="rows">행수</th>
+<th data-k="category">플랫폼</th><th data-k="path">파일</th><th data-k="rows">행수</th>
 <th data-k="size_kb">크기(KB)</th><th data-k="modified">수정일</th><th data-k="source">출처 / 설명</th><th>스키마</th>
 </tr></thead>
 <tbody></tbody>
@@ -162,7 +163,7 @@ const cats = [...new Set(DATA.map(r => r.category))];
 const totalRows = DATA.reduce((s, r) => s + (r.rows || 0), 0);
 document.querySelector("#stats").innerHTML = [
   ["파일 수", DATA.length],
-  ["카테고리", cats.length],
+  ["플랫폼", cats.length],
   ["총 데이터 행수", totalRows.toLocaleString()],
   ["CSV/XLSX", DATA.filter(r => [".csv",".xlsx"].includes(r.ext)).length],
 ].map(([l, n]) => `<div class="stat"><div class="n">${n}</div><div class="l">${l}</div></div>`).join("");
@@ -190,6 +191,15 @@ function escapeHtml(s) {
   return s.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 }
 
+const SCHEMA_PREVIEW_LEN = 70;
+function schemaCell(r) {
+  if (!r.schema) return "";
+  const full = Array.isArray(r.schema) ? r.schema.join(", ") : r.schema;
+  if (full.length <= SCHEMA_PREVIEW_LEN) return escapeHtml(full);
+  const preview = full.slice(0, SCHEMA_PREVIEW_LEN) + "…";
+  return `<details><summary>${escapeHtml(preview)}</summary><pre>${escapeHtml(full)}</pre></details>`;
+}
+
 function render(rows) {
   tbody.innerHTML = rows.map(r => {
     const c = colorOf(r.category);
@@ -198,12 +208,12 @@ function render(rows) {
       : (r.source ?? "");
     return `<tr>
     <td><span class="badge" style="background:${c}1a;color:${c}">${r.category}</span></td>
-    <td class="path">${r.path}${r.has_preview ? '<span class="preview-flag" title="원본 위치에 미리보기 이미지(.png) 있음">🖼️</span>' : ""}</td>
+    <td class="path">${r.path}${r.preview ? `<a class="preview-flag" href="${r.preview}" target="_blank" title="미리보기 이미지 열기">🖼️</a>` : ""}</td>
     <td class="num">${r.rows ?? ""}</td>
     <td class="num">${r.size_kb}</td>
     <td class="num">${r.modified}</td>
     <td>${sourceCell}</td>
-    <td class="schema">${r.schema ? (Array.isArray(r.schema) ? r.schema.join(", ") : r.schema) : ""}</td>
+    <td class="schema">${schemaCell(r)}</td>
   </tr>`;
   }).join("");
 }
@@ -228,6 +238,14 @@ document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click
 def build():
     files = [p for p in SOURCE.rglob("*") if p.is_file() and not is_csv_sidecar(p)]
     catalog = sorted((describe(p) for p in files), key=lambda e: (e["category"], e["path"]))
+
+    preview_dir = OUT / "previews"
+    preview_dir.mkdir(exist_ok=True)
+    for entry in catalog:
+        if entry["preview"]:
+            src = SOURCE / Path(entry["path"]).with_suffix(".png")
+            shutil.copy(src, preview_dir / src.name)
+
     (OUT / "catalog.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=2))
     html = HTML_TEMPLATE.replace("__DATA__", json.dumps(catalog, ensure_ascii=False))
     (OUT / "index.html").write_text(html)

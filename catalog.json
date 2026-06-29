@@ -9,7 +9,7 @@
     "schema": null,
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "(루트)",
@@ -25,7 +25,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -37,7 +37,7 @@
     "schema": null,
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -49,7 +49,7 @@
     "schema": null,
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -68,7 +68,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -85,7 +85,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -107,7 +107,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -119,7 +119,7 @@
     "schema": null,
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -131,7 +131,7 @@
     "schema": null,
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -173,7 +173,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -203,7 +203,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -215,7 +215,7 @@
     "schema": null,
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -227,7 +227,7 @@
     "schema": null,
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원지역혁신플랫폼",
@@ -251,7 +251,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -282,7 +282,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:55",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_F008\r\n\r\n○ 통계표명 : 1인당 최종에너지 소비량\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:55\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_F008&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주: 단위 TOE(Tonnage of Oil Equivalent)는 각종 에너지의 열량을 석유 1톤당 열량값인 10⁷Kcal로 환산한 것임\r\n  자료: 에너지정책과, 「지역에너지 통계연보」 에너지경제연구원\r\n  \r\n ■ 에너지소비량별 > 1인당 소비량\r\n  1인당 최종에너지 소비량 = (A)/(B)*100\r\n ■ 에너지소비량별 > 에너지유\r\n  발전, 내연기관, 램프, 취사기구, 난방기구 등에 동력 및 열 등으로 사용되는 석유제품으로서,  휘발유, 등유, 경유, 경질증유, 중유, 벙커C유, 항공유 등을 말함 \r\n ■ 에너지소비량별 > 비에너지유\r\n  에너지유를 제외한 석유제품으로서, 주로 타제품의 원료로 사용되는 납사용제 아스팔트 등을 말함\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -482,7 +482,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:05",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G004\r\n\r\n○ 통계표명 : 가스공급량\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:05\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G004&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료 : 에너지정책과, 한국도시가스협회\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -912,7 +912,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:38",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_A005\r\n\r\n○ 통계표명 : 강수량\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:38\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_A005&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : mm\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주: 삼척, 횡성, 평창, 화천, 양구, 인제, 양양은 방재 관측자료를 수록함\r\n      기상대 및 관측소가 없는 시군은 인근 관측지점 자료를 사용\r\n      (고성군: 속초기상대)\r\n  자료 :「기상관측통계」기상청 국가기후데이터센터\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -996,7 +996,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:19",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G007\r\n\r\n○ 통계표명 : 고압가스 시설 현황\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:19\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G007&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : 개\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료: 에너지정책과\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -1309,7 +1309,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:11",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_A65\r\n\r\n○ 통계표명 : 광산물생산\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:11\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_A65&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료: 자원개발과\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -1356,7 +1356,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -1760,7 +1760,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:59",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_A64\r\n\r\n○ 통계표명 : 광종별 광구수\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:59\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_A64&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : 개\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료: 자원개발과\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -2005,7 +2005,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:31",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G010\r\n\r\n○ 통계표명 : 급수사용량\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:31\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G010&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : ㎥\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주: 1995~2008년까지 단위는 천톤임\r\n  자료: 수질보전과\r\n  \r\n ■ 용도별 > 욕탕용\r\n  욕탕1종(대중탕용)+욕탕2종\r\n ■ 용도별 > 기타\r\n  산업 및 공업용+기타업종\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -2171,7 +2171,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:36",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G011\r\n\r\n○ 통계표명 : 급수사용료 부과\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:36\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G011&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : 천원\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주: 2008년까지 단위는 백만원임\r\n  자료: 수질보전과\r\n  \r\n ■ 용도별 > 욕탕용\r\n  욕탕1종(대중탕용)+욕탕2종\r\n ■ 용도별 > 기타\r\n  산업 및 공업용+기타업종\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -2244,7 +2244,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:07",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G005\r\n\r\n○ 통계표명 : 도시가스 용도별 공급량\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:07\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G005&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : 1000㎥\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주: 2018년도 집계기준 변경으로 \"취사\" 일부 수치가 \"난방\"으로 집계\r\n  자료: 에너지정책과, 한국도시가스협회\r\n  \r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -2321,7 +2321,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:47",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211N_A003811\r\n\r\n○ 통계표명 : 도시가스 이용현황(월별)\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:47\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211N_A003811&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : 개\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료 : 에너지과\r\n  통계표 변경(2011년)\r\n  2011년부터 영업용, 열병합발전용, 집단에너지 추가\r\n ■ 이용현황별 > 가정용\r\n  난방용외 자료임\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -2352,7 +2352,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:40",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211N_A00381\r\n\r\n○ 통계표명 : 도시가스 이용현황\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:40\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211N_A00381&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : 개\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료: 에너지과\r\n  통계표 변경(2011년), 가정용은 난방용외 자료임, 2011년부터 영업용, 열병합발전용, 집단에너지 추가\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -2369,7 +2369,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:14",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G006\r\n\r\n○ 통계표명 : 도시가스보급률\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:14\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G006&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료: 에너지정책과\r\n ■ 항목 > 보급률\r\n  도시가스 보급률 = (A)/(B)×100\r\n ■ 항목 > 도시가스 수요가구 수(A)\r\n  가정용 기준\r\n ■ 항목 > 공급권역 총 가구수(B)\r\n  주민등록인구 세대수 기준\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -2803,7 +2803,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:15",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_A67\r\n\r\n○ 통계표명 : 민수용 탄수급\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:15\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_A67&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : M/T\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료: 에너지과 \r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -2934,7 +2934,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:46",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G001\r\n\r\n○ 통계표명 : 발전현황\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:46\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G001&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주: 2011년 기준부터 영월, 덕송, 봉정발전소 제외    \r\n      2001~2008년의 발전설비 단위는 MWh임\r\n  자료 : 「한국전력통계」한국전력공사, GS 동해전력, 한국수자원공사 태백권지사, 횡성원주권지사, 춘천에너지\r\n ■ 발전소별 > 동해2\r\n  동해 2발전소는 1999년부터 발전\r\n  \r\n ■ 발전소별 > 양양양수\r\n  양양양수발전소 준공('06.9월)\r\n ■ 발전소별 > 영월1\r\n  영월화력 1,2호기  2002.1.1 폐지\r\n  \r\n ■ 발전소별 > 영월2\r\n  영월화력 1,2호기  2002.1.1 폐지\r\n  \r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -3000,7 +3000,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:48",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_F004_01\r\n\r\n○ 통계표명 : 산업 및 농공단지\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:48\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_F004_01&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n   주 1) 해당 단지에 가동업체가 2개사 이하인 경우에는 사업체의 정보 보호를 위하여 수치 대신 \"X\" 표기\t\t\t\t\t\t\r\n  자료 : 「전국산업단지현황통계」한국산업단지공단\t\t\t\t\t\t\r\n  \r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -3048,7 +3048,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:49",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_F004\r\n\r\n○ 통계표명 : 산업 및 농공단지\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:49\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_F004&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주 : 1) 해당 단지에 가동업체가 2개사 이하인 경우에는 사업체의 정보 보호를 위하여 수치 대신 \"X\" 표기\r\n      2) 종업원수, 생산액, 수출액은 시군별 산업단지 내 사업체 자료를 합산한 수치로, \"X\"로 표기한 정보를 제외한 합계임\t\r\n  자료: 「전국산업단지현황통계」한국산업단지공단\r\n ■ 항목 > 총면적\r\n  2002년부터 단위가 ㎡ 에서 1,000㎡ 로 변경\r\n ■ 시군별\r\n  행정구역 통합 1995년\r\n  춘천군 → 춘천시\r\n  원주군 → 원주시\r\n  명주군 → 강릉시\r\n  삼척군 → 삼척시\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -3287,7 +3287,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:23",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G008\r\n\r\n○ 통계표명 : 상수도 보급현황\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:23\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G008&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료 : 수질보전과, 환경부 「상수도통계」\r\n  \r\n  \r\n ■ 시군별 > 횡성군\r\n  횡성군은 광역상수도에서만 급수받으므로 시설용량 미기재\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -3338,7 +3338,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:26",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G009\r\n\r\n○ 통계표명 : 상수도관\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:26\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G009&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : m\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료 : 수질보전과\r\n ■ 종류별 > 기타\r\n  1990~1992년은 흄관,닥타일관,P.V.C수치를 더한값임\r\n ■ 종류별 > 기타\r\n  1990~1992년은 흄관,닥타일관,P.V.C수치를 더한값임\r\n ■ 종류별 > PVC관\r\n  PVC, PE, Hi-4P포함(2004~)\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -3478,7 +3478,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:52",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_F005\r\n\r\n○ 통계표명 : 석유류소비량\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:52\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_F005&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : 천배럴\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주: 2020년까지의 단위 ㎘, 2021년부터 천배럴\r\n  자료: 에너지정책과\r\n ■ 종류별 > 합계\r\n  합계에 LPG 제외\r\n ■ 종류별 > 기타\r\n  경질중유, 중유, 나프타, 항공유 등 포함\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -3507,7 +3507,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:54",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_F006\r\n\r\n○ 통계표명 : 신재생에너지 생산량\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:54\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_F006&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : toe\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주: 단위 TOE(Tonnage of Oil Equivalent)는 각종 에너지의 열량을 석유 1톤당 열량값인 10⁷Kcal로 환산한 것임\t\t\t\r\n  자료 :에너지정책과\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -3537,7 +3537,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:54",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_F007\r\n\r\n○ 통계표명 : 신재생에너지 설비 용량(고유단위)\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:54\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_F007&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료 : 에너지정책과,  「신재생에너지보급실적조사」 한국에너지공단\r\n  \r\n ■ 에너지종류별\r\n  20년 기준 단위 변경 :  태양열(㎡), 바이오가스(증기톤/시간), 매립지가스(KW), 목재팰릿(증기톤/시간), 하수슬러지고형연료(증기톤/시간), 생활폐기물(증기톤/시간), 우드칩(증기톤/시간), 폐목재(증기톤/시간), 흑액(증기톤/시간), 폐가스(증기톤/시간), 산업폐기물(증기톤/시간)\r\n ■ 에너지종류별 > 매립지가스\r\n  LFG : Land Fill Gas\r\n ■ 에너지종류별 > 폐기물에너지\r\n  신에너지 및 재생에너지 개발·이용·보급 촉진법 개정(2019.10.)에 따라 비재생폐기물로부터 생산된 것은 제외\r\n ■ 에너지종류별 > SRF\r\n  대형도시쓰레기는 2016년부터 생활폐기물에 포함되어 삭제, RDF/RPF/TDF는 2015년부터 SRF로 변경\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -3558,7 +3558,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:57",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_F009\r\n\r\n○ 통계표명 : 에너지 관리대상 현황\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:57\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_F009&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : 개\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주 : toe는 석유환산톤*을 뜻함\r\n       * 석유환산톤 : 각종 에너지의 열량을 석유 1톤당 열량값인 10⁷Kcal로 환산한 것\r\n  자료 : 에너지정책과,  「에너지사용량통계」 산업통상자원부 에너지전환정책과\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -3570,7 +3570,7 @@
     "schema": null,
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -4128,7 +4128,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -4183,7 +4183,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:32",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_A003\r\n\r\n○ 통계표명 : 일기일수\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 14:32\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_A003&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : 일\r\n\r\n○ 주석\r\n ■ 통계표\r\n  자료 :「기상관측통계」기상청 국가기후데이터센터, 강원지방기상청\t\r\n  2009년기준부터 구름조금, 구름많음 항목추가, 유인관측지점 자료(춘천지방- 북춘천, 강릉지방- 북강릉자료임)\r\n  \r\n ■ 지역별 > 춘천\r\n  2017년 기준부터 북춘천으로 관측지점 변경\r\n ■ 지역별 > 강릉\r\n  2017년 기준부터 북강릉으로 관측지점 변경\r\n ■ 지역별 > 속초\r\n  2015. 7. 13이후 속초지점 관측 종료로 데이터 없음\r\n ■ 지역별 > 원주\r\n  2015. 1. 22이후 원주지점 관측 종료로 데이터 없음\r\n ■ 지역별 > 횡성\r\n  방재기상관측지점\r\n ■ 지역별 > 양양\r\n  방재기상관측지점\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -4230,7 +4230,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:46",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_F003\r\n\r\n○ 통계표명 : 제조업 중분류별 사업체수 및 종사자수(10인 이상)\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 13:46\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_F003&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주 : 1) 사업체수가 2개 이하인 경우 업체비밀보호를 위해 \"×\"로 표시\t\t\t\t\t\t\t\r\n        2) 월평균 종사자 10인 이상 사업체 기준\t\t\t\r\n  자료 :「광업제조업조사」통계청\t\t\r\n  \t\t\t\t\r\n  \r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -4270,7 +4270,7 @@
     ],
     "source": "KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:01",
     "description": "<통계표 메타자료>\r\n\r\n○ 통계표ID : DT_211002_G003\r\n\r\n○ 통계표명 : 제조업종별 전력사용량\r\n\r\n○ 출처 : KOSIS(강원특별자치도기본통계, 강원특별자치도), 2026.06.26 15:01\r\n\r\n○ 문의처 : 033-249-2492\r\n\r\n○ 통계표URL : https://stat.kosis.kr/statHtml_host/statHtml.do?orgId=211&tblId=DT_211002_G003&conn_path=I3\r\n              * KOSIS 개편 시 통계표 URL은 달라질 수 있음\r\n\r\n○ 단위 : Mwh\r\n\r\n○ 주석\r\n ■ 통계표\r\n  주: 1) 소수점 첫째 자리에서 반올림하여 기재하였으므로 세목의 합계가 총계와 일치하지 않는 경우도 있음\r\n       2) 2021년 기준부터 25개 중분류 전부 표시\r\n  자료 : 한국전력공사강원본부\r\n",
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "강원통계정보",
@@ -4545,7 +4545,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": false
+    "preview": null
   },
   {
     "category": "공공데이터포털",
@@ -4570,7 +4570,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": true
+    "preview": "previews/강원도 정선군_태양광 인허가 현황_20251126.png"
   },
   {
     "category": "공공데이터포털",
@@ -4588,7 +4588,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": true
+    "preview": "previews/강원도 화천군_태양광발전소 현황_20211110.png"
   },
   {
     "category": "공공데이터포털",
@@ -4611,7 +4611,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": true
+    "preview": "previews/강원도_인제군_신재생에너지_현황_20220920.png"
   },
   {
     "category": "공공데이터포털",
@@ -4631,7 +4631,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": true
+    "preview": "previews/강원특별자치도 영월군_전기사업허가 미준공 내역_20260409.png"
   },
   {
     "category": "공공데이터포털",
@@ -4651,7 +4651,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": true
+    "preview": "previews/강원특별자치도_전기사업허가현황_20251231.png"
   },
   {
     "category": "공공데이터포털",
@@ -4670,7 +4670,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": true
+    "preview": "previews/한국남부발전(주)_연도 및 지역별 풍력 발전량_20241231.png"
   },
   {
     "category": "공공데이터포털",
@@ -4689,7 +4689,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": true
+    "preview": "previews/한국남부발전(주)_연도 및 지역별 풍력 이용률_20241231.png"
   },
   {
     "category": "공공데이터포털",
@@ -4706,7 +4706,7 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": true
+    "preview": "previews/한국동서발전(주)_동해 연료전지 발전 월별 발전량_20250630.png"
   },
   {
     "category": "공공데이터포털",
@@ -4722,6 +4722,6 @@
     ],
     "source": null,
     "description": null,
-    "has_preview": true
+    "preview": "previews/한국전력거래소_평창군 신재생에너지 전력거래량_20211231.png"
   }
 ]
