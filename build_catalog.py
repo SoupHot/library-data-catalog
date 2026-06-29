@@ -56,7 +56,7 @@ def describe(path):
     stat = path.stat()
     rel_parts = path.relative_to(SOURCE).parts
     entry = {
-        "category": rel_parts[0] if len(rel_parts) > 1 else "(루트)",
+        "category": rel_parts[0],
         "path": str(path.relative_to(SOURCE)),
         "ext": path.suffix.lower(),
         "size_kb": round(stat.st_size / 1024, 1),
@@ -120,7 +120,6 @@ tbody tr:last-child td{border-bottom:none}
 details>summary{cursor:pointer;color:var(--accent)}
 details[open]>summary{margin-bottom:.4rem}
 details pre{white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,monospace;font-size:.72rem;color:var(--ink);background:var(--bg);border-radius:.5rem;padding:.6rem .8rem;margin:0;max-width:100%}
-.preview-flag{margin-left:.35rem;font-size:.8rem}
 </style>
 <div class="wrap">
 <header>
@@ -203,12 +202,15 @@ function schemaCell(r) {
 function render(rows) {
   tbody.innerHTML = rows.map(r => {
     const c = colorOf(r.category);
-    const sourceCell = r.description
-      ? `<details><summary>${escapeHtml(r.source || "설명 보기")}</summary><pre>${escapeHtml(r.description)}</pre></details>`
-      : (r.source ?? "");
+    let sourceCell = r.source ?? "";
+    if (r.description) {
+      sourceCell = `<details><summary>${escapeHtml(r.source || "설명 보기")}</summary><pre>${escapeHtml(r.description)}</pre></details>`;
+    } else if (r.preview) {
+      sourceCell = `<details><summary>🖼️ 미리보기 이미지</summary><img src="${r.preview}" style="max-width:100%;border-radius:.4rem"></details>`;
+    }
     return `<tr>
     <td><span class="badge" style="background:${c}1a;color:${c}">${r.category}</span></td>
-    <td class="path">${r.path}${r.preview ? `<a class="preview-flag" href="${r.preview}" target="_blank" title="미리보기 이미지 열기">🖼️</a>` : ""}</td>
+    <td class="path">${r.path}</td>
     <td class="num">${r.rows ?? ""}</td>
     <td class="num">${r.size_kb}</td>
     <td class="num">${r.modified}</td>
@@ -236,7 +238,10 @@ document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click
 
 
 def build():
-    files = [p for p in SOURCE.rglob("*") if p.is_file() and not is_csv_sidecar(p)]
+    files = [
+        p for p in SOURCE.rglob("*")
+        if p.is_file() and not is_csv_sidecar(p) and len(p.relative_to(SOURCE).parts) > 1
+    ]
     catalog = sorted((describe(p) for p in files), key=lambda e: (e["category"], e["path"]))
 
     preview_dir = OUT / "previews"

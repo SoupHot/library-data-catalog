@@ -1,33 +1,5 @@
 [
   {
-    "category": "(루트)",
-    "path": "강원도 데이터 현황 조사v0.4.hwpx",
-    "ext": ".hwpx",
-    "size_kb": 84.6,
-    "modified": "2026-06-12",
-    "rows": null,
-    "schema": null,
-    "source": null,
-    "description": null,
-    "preview": null
-  },
-  {
-    "category": "(루트)",
-    "path": "강원도_데이터현황_정리.xlsx",
-    "ext": ".xlsx",
-    "size_kb": 23.2,
-    "modified": "2026-06-12",
-    "rows": null,
-    "schema": [
-      "전체 현황 A1:I29",
-      "공개 데이터 A1:H13",
-      "미공개 데이터 A1:H16"
-    ],
-    "source": null,
-    "description": null,
-    "preview": null
-  },
-  {
     "category": "강원지역혁신플랫폼",
     "path": "강원지역혁신플랫폼/12. 건물 에너지 소비 데이터/Colab code/12. 건물 에너지 소비 데이터.ipynb",
     "ext": ".ipynb",
