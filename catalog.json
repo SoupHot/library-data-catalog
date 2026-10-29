@@ -63662,12 +63662,6 @@
     "path": "강원지역혁신플랫폼/11. 차량속도 예측 데이터",
     "files": [
       {
-        "name": "LR_for_Vehicle_Speed.ipynb",
-        "ext": ".ipynb",
-        "size_kb": 10.0,
-        "rows": null
-      },
-      {
         "name": "06.LR_for_Vehicle_Speed-checkpoint.ipynb",
         "ext": ".ipynb",
         "size_kb": 9.8,
@@ -63677,35 +63671,6 @@
         "name": "06.LR_for_Vehicle_Speed_정답-checkpoint.ipynb",
         "ext": ".ipynb",
         "size_kb": 53.8,
-        "rows": null
-      },
-      {
-        "name": "vehicle_speed.csv",
-        "ext": ".csv",
-        "size_kb": 3277.9,
-        "rows": 33804,
-        "schema": [
-          "secs",
-          "nsecs",
-          "acceleration_cmd",
-          "brake_cmd",
-          "gear_position",
-          "steering_angle(deg)",
-          "vehicle_speed(km/h)",
-          "wheel_speed_rear_right(km/h)",
-          "wheel_speed_rear_left(km/h)",
-          "longitudinal_acceleration(m/s^2)",
-          "lateral_acceleration(m/s^2)",
-          "yaw_rate(deg/s)",
-          "linear_acceleration_x(m/s^2)",
-          "UTM_x",
-          "UTM_y"
-        ]
-      },
-      {
-        "name": "vehicle_speed_data_discription.docx",
-        "ext": ".docx",
-        "size_kb": 15.0,
         "rows": null
       },
       {
@@ -63727,8 +63692,8 @@
         "rows": null
       }
     ],
-    "size_kb": 6738.1,
-    "rows": 33804,
+    "size_kb": 3435.1,
+    "rows": 0,
     "modified": "2026-10-27",
     "source": null,
     "description": null,
