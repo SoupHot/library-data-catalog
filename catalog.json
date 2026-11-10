@@ -63171,6 +63171,16 @@
         "rows": null
       },
       {
+        "name": "training_activity_label.csv",
+        "ext": ".csv",
+        "size_kb": 3.0,
+        "rows": 141,
+        "schema": [
+          "SAMPLE_EMAIL",
+          "DIAG_NM"
+        ]
+      },
+      {
         "name": "training_mmse_label.csv",
         "ext": ".csv",
         "size_kb": 3.0,
@@ -63491,8 +63501,8 @@
         "rows": null
       }
     ],
-    "size_kb": 104018.9,
-    "rows": 24921,
+    "size_kb": 104021.9,
+    "rows": 25062,
     "modified": "2026-10-27",
     "source": null,
     "description": null,
