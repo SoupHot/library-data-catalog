@@ -64327,12 +64327,6 @@
     "path": "강원지역혁신플랫폼/9. AI4I 2020 예측 유지 보수 데이터",
     "files": [
       {
-        "name": "9. AI4I 2020 예측 유지 보수 데이터.zip",
-        "ext": ".zip",
-        "size_kb": 477.0,
-        "rows": null
-      },
-      {
         "name": "9. AI4I 2020 예측 유지 보수 데이터.ipynb",
         "ext": ".ipynb",
         "size_kb": 479.0,
@@ -64365,21 +64359,9 @@
           "OSF",
           "RNF"
         ]
-      },
-      {
-        "name": "수집결과.md",
-        "ext": ".md",
-        "size_kb": 1.5,
-        "rows": null
-      },
-      {
-        "name": "수집정보.json",
-        "ext": ".json",
-        "size_kb": 1.3,
-        "rows": null
       }
     ],
-    "size_kb": 1521.6,
+    "size_kb": 1041.8,
     "rows": 10000,
     "modified": "2026-10-27",
     "source": null,
@@ -64459,62 +64441,13 @@
     "platform": "강원지역혁신플랫폼",
     "dataset": "관상동맥 심장질환 데이터",
     "path": "강원지역혁신플랫폼/관상동맥 심장질환 데이터",
-    "files": [
-      {
-        "name": "관상동맥 심장질환 데이터.csv",
-        "ext": ".csv",
-        "size_kb": 77.4,
-        "rows": 1908,
-        "schema": [
-          "CLASS",
-          "sbp",
-          "tobacco",
-          "ldl",
-          "adiposity",
-          "famhist",
-          "typea",
-          "obesity",
-          "alcohol",
-          "age"
-        ]
-      },
-      {
-        "name": "관상동맥 심장질환 데이터.zip",
-        "ext": ".zip",
-        "size_kb": 133.7,
-        "rows": null
-      },
-      {
-        "name": "관상동맥 심장질환 분석가이드.ipynb",
-        "ext": ".ipynb",
-        "size_kb": 7.5,
-        "rows": null
-      },
-      {
-        "name": "수집결과.md",
-        "ext": ".md",
-        "size_kb": 1.4,
-        "rows": null
-      },
-      {
-        "name": "수집정보.json",
-        "ext": ".json",
-        "size_kb": 1.2,
-        "rows": null
-      },
-      {
-        "name": "합성데이터 설명서(6총 취합본 최종).hwp",
-        "ext": ".hwp",
-        "size_kb": 124.5,
-        "rows": null
-      }
-    ],
-    "size_kb": 345.7,
-    "rows": 1908,
-    "modified": "2026-10-27",
+    "files": [],
+    "size_kb": 0.0,
+    "rows": 0,
+    "modified": null,
     "source": null,
     "description": null,
-    "has_desc_file": true,
+    "has_desc_file": false,
     "preview": null,
     "download": "https://drive.google.com/open?id=1OTzBzHfKJb0J8aeirFwxAYnb5lmD0C29"
   },
